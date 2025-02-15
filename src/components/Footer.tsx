@@ -8,7 +8,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
-import logo from "../assets/images/logo.webp";
+import logo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (

@@ -12,7 +12,7 @@ const AboutPage = () => {
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-gray-900">
         <img
-          src="https://images.unsplash.com/photo-1595342084661-5b5c62aa3a8c?auto=format&fit=crop&q=80"
+          src="https://hogr.app/blog/wp-content/uploads/2024/07/image-119.png"
           alt="Traditional Indian Grains"
           className="w-full h-full object-cover opacity-40"
         />

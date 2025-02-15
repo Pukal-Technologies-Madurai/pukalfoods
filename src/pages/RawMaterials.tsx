@@ -201,7 +201,7 @@ const RawMaterials = () => {
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-gray-900">
         <img
-          src="https://images.unsplash.com/photo-1595974482597-4b8dc7b2c8e3?auto=format&fit=crop&q=80"
+          src="https://thumbs.dreamstime.com/b/variety-kinds-natural-cereal-grain-seed-sack-dark-tone-clean-food-raw-material-agricultural-product-concept-204435854.jpg"
           alt="Raw Materials"
           className="w-full h-full object-cover opacity-40"
         />

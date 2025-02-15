@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import finger from "../assets/finished-goods/finger-millet-puff.webp";
-import jowar from "../assets/finished-goods/jowar-puff.webp";
-import multiMillet from "../assets/finished-goods/multi-millet-puff.webp";
-import pearl from "../assets/finished-goods/pearl-millet-puff.webp";
+import finger from "../assets/finished-goods/finger-millet-puff.png";
+import jowar from "../assets/finished-goods/jowar-puff.png";
+import multiMillet from "../assets/finished-goods/multi-millet-puff.png";
+import pearl from "../assets/finished-goods/pearl-millet-puff.png";
 
 const FinishedProducts = () => {
   const categories = [

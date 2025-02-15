@@ -20,7 +20,7 @@ const ManufacturingPage = () => {
       {/* Hero Section */}
       <div className="relative h-[60vh] bg-gray-900">
         <img
-          src="https://images.unsplash.com/photo-1530939027401-cca9096d1586?auto=format&fit=crop&q=80"
+          src={machinery}
           alt="Manufacturing"
           className="w-full h-full object-cover opacity-40"
         />
