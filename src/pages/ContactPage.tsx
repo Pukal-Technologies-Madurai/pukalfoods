@@ -1,12 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 
 const ContactPage = () => {
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
+    transition: { duration: 0.6 },
   };
 
   return (
@@ -51,9 +50,11 @@ const ContactPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">Get in Touch</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900">
+              Get in Touch
+            </h2>
             <div className="space-y-6">
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-4"
                 whileHover={{ x: 10 }}
               >
@@ -66,7 +67,7 @@ const ContactPage = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-4"
                 whileHover={{ x: 10 }}
               >
@@ -79,7 +80,7 @@ const ContactPage = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-4"
                 whileHover={{ x: 10 }}
               >
@@ -88,11 +89,14 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Address</h3>
-                  <p className="text-gray-600">123 Business Park, Tamil Nadu, India</p>
+                  <p className="text-gray-600">
+                    6A, First Floor, North, Viswanadha puram, Main road, Reserve
+                    Line, Viswanathapuram, Madurai, Tamil Nadu 625014
+                  </p>
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-4"
                 whileHover={{ x: 10 }}
               >
@@ -100,8 +104,12 @@ const ContactPage = () => {
                   <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900">Business Hours</h3>
-                  <p className="text-gray-600">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                  <h3 className="font-semibold text-gray-900">
+                    Business Hours
+                  </h3>
+                  <p className="text-gray-600">
+                    Monday - Saturday: 9:00 AM - 6:00 PM
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -116,7 +124,10 @@ const ContactPage = () => {
           >
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Name
                 </label>
                 <input
@@ -128,7 +139,10 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email
                 </label>
                 <input
@@ -140,7 +154,10 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Subject
                 </label>
                 <input
@@ -152,7 +169,10 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Message
                 </label>
                 <textarea
@@ -179,4 +199,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage; 
+export default ContactPage;

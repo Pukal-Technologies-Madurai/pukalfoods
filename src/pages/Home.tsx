@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Products from '../components/Products';
-import Manufacturing from '../components/Manufacturing';
-import FeaturedProducts from '../components/FeaturedProducts';
+import { motion } from "framer-motion";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Products from "../components/Products";
+import Manufacturing from "../components/Manufacturing";
+import FeaturedProducts from "../components/FeaturedProducts";
 
 const Home = () => {
   return (

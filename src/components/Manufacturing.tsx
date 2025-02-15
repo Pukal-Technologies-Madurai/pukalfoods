@@ -1,35 +1,40 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Settings, Package, Shield, TrendingUp } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Settings, Package, Shield, TrendingUp } from "lucide-react";
 
 const Manufacturing = () => {
   const facilities = [
     {
-      image: "https://www.shrifoodsindia.com/static/Chocolate%20Cooling%20Unit-37cc2ec8dd8071f9e03730ac6ca16137.webp",
+      image:
+        "https://www.shrifoodsindia.com/static/Chocolate%20Cooling%20Unit-37cc2ec8dd8071f9e03730ac6ca16137.webp",
       title: "Modern Processing Units",
-      description: "State-of-the-art facilities equipped with the latest technology"
+      description:
+        "State-of-the-art facilities equipped with the latest technology",
     },
     {
-      image: "https://www.shrifoodsindia.com/static/Air%20Puff%20Gun-1d322b311e2fd013825864d0f931d56a.webp",
+      image:
+        "https://www.shrifoodsindia.com/static/Air%20Puff%20Gun-1d322b311e2fd013825864d0f931d56a.webp",
       title: "Quality Testing Lab",
-      description: "Advanced testing facilities ensuring product quality"
-    }
+      description: "Advanced testing facilities ensuring product quality",
+    },
   ];
 
   return (
     <section id="manufacturing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Manufacturing Excellence</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Manufacturing Excellence
+          </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Our state-of-the-art manufacturing facilities combine traditional expertise 
-            with modern technology to deliver products of the highest quality.
+            Our state-of-the-art manufacturing facilities combine traditional
+            expertise with modern technology to deliver products of the highest
+            quality.
           </p>
         </motion.div>
 
@@ -50,7 +55,9 @@ const Manufacturing = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end">
                 <div className="p-6 text-white">
-                  <h3 className="text-xl font-semibold mb-2">{facility.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {facility.title}
+                  </h3>
                   <p>{facility.description}</p>
                 </div>
               </div>
@@ -63,23 +70,23 @@ const Manufacturing = () => {
             {
               icon: <Settings className="h-8 w-8 text-[#CC0000]" />,
               title: "Advanced Technology",
-              description: "Latest processing equipment"
+              description: "Latest processing equipment",
             },
             {
               icon: <Package className="h-8 w-8 text-[#CC0000]" />,
               title: "Packaging Solutions",
-              description: "Multiple packaging options"
+              description: "Multiple packaging options",
             },
             {
               icon: <Shield className="h-8 w-8 text-[#CC0000]" />,
               title: "Quality Control",
-              description: "Rigorous testing protocols"
+              description: "Rigorous testing protocols",
             },
             {
               icon: <TrendingUp className="h-8 w-8 text-[#CC0000]" />,
               title: "High Capacity",
-              description: "Large scale production"
-            }
+              description: "Large scale production",
+            },
           ].map((feature, index) => (
             <motion.div
               key={index}
@@ -90,7 +97,9 @@ const Manufacturing = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <div className="flex justify-center mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {feature.title}
+              </h3>
               <p className="text-gray-600">{feature.description}</p>
             </motion.div>
           ))}

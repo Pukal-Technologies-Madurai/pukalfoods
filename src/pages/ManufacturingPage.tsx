@@ -1,6 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Settings, Package, Shield, TrendingUp, Award, Users } from 'lucide-react';
+import { motion } from "framer-motion";
+import {
+  Settings,
+  Package,
+  Shield,
+  TrendingUp,
+  Award,
+  Users,
+} from "lucide-react";
+import machinery from "../assets/images/Machinery.jpeg";
 
 const ManufacturingPage = () => {
   return (
@@ -49,16 +56,20 @@ const ManufacturingPage = () => {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           >
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Facilities</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Our Facilities
+              </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Our state-of-the-art manufacturing facilities span over 50,000 square feet, 
-                  equipped with the latest technology in food processing and packaging. We maintain 
-                  stringent quality control measures throughout our production process.
+                  Our state-of-the-art manufacturing facilities span over 50,000
+                  square feet, equipped with the latest technology in food
+                  processing and packaging. We maintain stringent quality
+                  control measures throughout our production process.
                 </p>
                 <p>
-                  With a daily production capacity of 100 metric tons, we serve customers across 
-                  India and international markets, ensuring consistent quality and timely delivery.
+                  With a daily production capacity of 100 metric tons, we serve
+                  customers across India and international markets, ensuring
+                  consistent quality and timely delivery.
                 </p>
               </div>
             </div>
@@ -66,7 +77,7 @@ const ManufacturingPage = () => {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              src="https://images.unsplash.com/photo-1581091226825-c6a89e7e4801?auto=format&fit=crop&q=80"
+              src={machinery}
               alt="Facility"
               className="rounded-lg shadow-lg"
             />
@@ -83,10 +94,13 @@ const ManufacturingPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Process</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Our Process
+            </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              From raw material selection to final packaging, every step is carefully monitored 
-              and controlled to ensure the highest quality standards.
+              From raw material selection to final packaging, every step is
+              carefully monitored and controlled to ensure the highest quality
+              standards.
             </p>
           </motion.div>
 
@@ -95,23 +109,23 @@ const ManufacturingPage = () => {
               {
                 icon: <Package className="h-8 w-8 text-[#CC0000]" />,
                 title: "Raw Material Selection",
-                description: "Careful sourcing and quality checks"
+                description: "Careful sourcing and quality checks",
               },
               {
                 icon: <Settings className="h-8 w-8 text-[#CC0000]" />,
                 title: "Processing",
-                description: "Advanced processing technology"
+                description: "Advanced processing technology",
               },
               {
                 icon: <Shield className="h-8 w-8 text-[#CC0000]" />,
                 title: "Quality Control",
-                description: "Multiple quality checkpoints"
+                description: "Multiple quality checkpoints",
               },
               {
                 icon: <TrendingUp className="h-8 w-8 text-[#CC0000]" />,
                 title: "Packaging",
-                description: "Modern packaging solutions"
-              }
+                description: "Modern packaging solutions",
+              },
             ].map((step, index) => (
               <motion.div
                 key={index}
@@ -121,8 +135,12 @@ const ManufacturingPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center"
               >
-                <div className="mb-4 p-3 bg-red-50 rounded-full">{step.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+                <div className="mb-4 p-3 bg-red-50 rounded-full">
+                  {step.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {step.title}
+                </h3>
                 <p className="text-gray-600">{step.description}</p>
               </motion.div>
             ))}
@@ -139,9 +157,12 @@ const ManufacturingPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Quality Assurance</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Quality Assurance
+            </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Our commitment to quality is reflected in our certifications and rigorous testing procedures.
+              Our commitment to quality is reflected in our certifications and
+              rigorous testing procedures.
             </p>
           </motion.div>
 
@@ -150,18 +171,21 @@ const ManufacturingPage = () => {
               {
                 icon: <Award className="h-8 w-8 text-[#CC0000]" />,
                 title: "ISO 9001:2015",
-                description: "Certified quality management system ensuring consistent quality"
+                description:
+                  "Certified quality management system ensuring consistent quality",
               },
               {
                 icon: <Shield className="h-8 w-8 text-[#CC0000]" />,
                 title: "FSSAI Certified",
-                description: "Meeting all food safety standards and regulations"
+                description:
+                  "Meeting all food safety standards and regulations",
               },
               {
                 icon: <Users className="h-8 w-8 text-[#CC0000]" />,
                 title: "Expert Team",
-                description: "Qualified professionals monitoring quality at every stage"
-              }
+                description:
+                  "Qualified professionals monitoring quality at every stage",
+              },
             ].map((cert, index) => (
               <motion.div
                 key={index}
@@ -171,8 +195,12 @@ const ManufacturingPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-gray-50 p-8 rounded-lg shadow-md flex flex-col items-center text-center"
               >
-                <div className="mb-4 p-3 bg-red-50 rounded-full">{cert.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{cert.title}</h3>
+                <div className="mb-4 p-3 bg-red-50 rounded-full">
+                  {cert.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {cert.title}
+                </h3>
                 <p className="text-gray-600">{cert.description}</p>
               </motion.div>
             ))}

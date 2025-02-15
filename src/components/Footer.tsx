@@ -1,5 +1,14 @@
-import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
+import logo from "../assets/images/logo.webp";
 
 const Footer = () => {
   return (
@@ -8,9 +17,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-[#CC0000] mb-4">Pukal Foods</h3>
+            <img
+              src={logo}
+              alt="Pukal Foods Logo"
+              className="h-12 w-auto mb-4"
+            />
             <p className="text-gray-400 mb-4">
-              Premium agricultural products manufacturer with a commitment to quality and innovation.
+              Premium agricultural products manufacturer with a commitment to
+              quality and innovation.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-[#CC0000]">
@@ -38,17 +52,26 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-400 hover:text-[#CC0000]">
+                <Link
+                  to="/about"
+                  className="text-gray-400 hover:text-[#CC0000]"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-[#CC0000]">
+                <Link
+                  to="/products"
+                  className="text-gray-400 hover:text-[#CC0000]"
+                >
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/manufacturing" className="text-gray-400 hover:text-[#CC0000]">
+                <Link
+                  to="/manufacturing"
+                  className="text-gray-400 hover:text-[#CC0000]"
+                >
                   Manufacturing
                 </Link>
               </li>
@@ -96,4 +119,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
